@@ -1,1 +1,28 @@
 first 1 change 10:24
+
+git版本回退的方法：
+Lenovo@DESKTOP-C0P4TL1 MINGW64 /d/git_local (master)
+$ git-log
+* 5f6971b (HEAD -> master) change 1 test01.txt
+* 0b87dd9 add test01.txt
+
+Lenovo@DESKTOP-C0P4TL1 MINGW64 /d/git_local (master)
+$ git reset --hard 0b87dd9
+HEAD is now at 0b87dd9 add test01.txt
+
+Lenovo@DESKTOP-C0P4TL1 MINGW64 /d/git_local (master)
+$ git-log
+* 0b87dd9 (HEAD -> master) add test01.txt
+
+Lenovo@DESKTOP-C0P4TL1 MINGW64 /d/git_local (master)
+$ git reset --hard 5f6971b
+HEAD is now at 5f6971b change 1 test01.txt
+
+Lenovo@DESKTOP-C0P4TL1 MINGW64 /d/git_local (master)
+$ git-log
+* 5f6971b (HEAD -> master) change 1 test01.txt
+* 0b87dd9 add test01.txt
+
+Lenovo@DESKTOP-C0P4TL1 MINGW64 /d/git_local (master)
+$
+
